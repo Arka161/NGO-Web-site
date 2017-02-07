@@ -23,6 +23,8 @@ public class MyDb {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ngo","root","root");
+         /*Add you DataBase Details here to start an effective connection    
+         */ 
             
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(MyDb.class.getName()).log(Level.SEVERE, null, ex);
